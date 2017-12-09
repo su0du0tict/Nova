@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="15" passed="14">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="246626" started-at="2017-11-06T17:31:28Z" finished-at="2017-11-06T17:35:35Z">
+    <groups>
+      <group name="Rest_API">
+        <method signature="Pickup_Activity.Send_Pickup()[pri:0, instance:Test_Package.Pickup_Activity@5e3a8624]" name="Send_Pickup" class="Test_Package.Pickup_Activity"/>
+      </group> <!-- Rest_API -->
+      <group name="Web_App">
+        <method signature="Web_APP.test_init()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="test_init" class="Test_Package.Web_APP"/>
+        <method signature="Web_APP.login_portal()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="login_portal" class="Test_Package.Web_APP"/>
+        <method signature="Web_APP.enter_values_for_login()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="enter_values_for_login" class="Test_Package.Web_APP"/>
+        <method signature="Web_APP.select_pickup_tab()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="select_pickup_tab" class="Test_Package.Web_APP"/>
+        <method signature="Web_APP.row_column_exercise()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="row_column_exercise" class="Test_Package.Web_APP"/>
+        <method signature="Web_APP.push_to_app()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="push_to_app" class="Test_Package.Web_APP"/>
+      </group> <!-- Web_App -->
+    </groups>
+    <test name="Default test" duration-ms="246626" started-at="2017-11-06T17:31:28Z" finished-at="2017-11-06T17:35:35Z">
+      <class name="Test_Package.Mobile_Login">
+        <test-method status="PASS" signature="init()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="init" duration-ms="23792" depends-on-groups="Web_App" started-at="2017-11-06T12:32:29Z" finished-at="2017-11-06T12:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="login" duration-ms="35881" depends-on-groups="Web_App" started-at="2017-11-06T12:32:52Z" depends-on-methods="Test_Package.Mobile_Login.init" finished-at="2017-11-06T12:33:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="cancel_popup()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="cancel_popup" duration-ms="13075" depends-on-groups="Web_App" started-at="2017-11-06T12:33:28Z" depends-on-methods="Test_Package.Mobile_Login.login" finished-at="2017-11-06T12:33:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancel_popup -->
+        <test-method status="PASS" signature="TnC_Agree()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="TnC_Agree" duration-ms="15513" depends-on-groups="Web_App" started-at="2017-11-06T12:33:41Z" depends-on-methods="Test_Package.Mobile_Login.cancel_popup" finished-at="2017-11-06T12:33:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TnC_Agree -->
+        <test-method status="PASS" signature="Provide_permissions()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="Provide_permissions" duration-ms="39118" depends-on-groups="Web_App" started-at="2017-11-06T12:33:57Z" depends-on-methods="Test_Package.Mobile_Login.TnC_Agree" finished-at="2017-11-06T12:34:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Provide_permissions -->
+        <test-method status="PASS" signature="Open_Activity_and_Accept()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="Open_Activity_and_Accept" duration-ms="28235" depends-on-groups="Web_App" started-at="2017-11-06T12:34:36Z" depends-on-methods="Test_Package.Mobile_Login.Provide_permissions" finished-at="2017-11-06T12:35:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Open_Activity_and_Accept -->
+        <test-method status="PASS" signature="complete_activity_selection()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="complete_activity_selection" duration-ms="12753" depends-on-groups="Web_App" started-at="2017-11-06T12:35:04Z" depends-on-methods="Test_Package.Mobile_Login.Open_Activity_and_Accept" finished-at="2017-11-06T12:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complete_activity_selection -->
+        <test-method status="FAIL" signature="complete_activity()[pri:0, instance:Test_Package.Mobile_Login@6a41eaa2]" name="complete_activity" duration-ms="17970" started-at="2017-11-06T12:35:17Z" depends-on-methods="Test_Package.Mobile_Login.complete_activity_selection" finished-at="2017-11-06T12:35:35Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'LVLFCPAB000385', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.abc.mcoe.dash.dev, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=07160795b61b1a04, platform=LINUX, deviceUDID=07160795b61b1a04, appActivity=com.abc.mcoe.dash.dev.DashDevActivity, desired={appPackage=com.abc.mcoe.dash.dev, appActivity=com.abc.mcoe.dash.dev.DashDevActivity, platformVersion=6.0.1, browserName=Android, fastReset=true, platformName=Android, deviceName=07160795b61b1a04}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=SM-N920V, fastReset=true, platformName=Android, deviceManufacturer=samsung}]
+Session ID: 3e7839e0-25a6-4b19-bbd4-ee29034a6891]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12.13 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'LVLFCPAB000385', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.abc.mcoe.dash.dev, deviceScreenSize=1440x2560, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=07160795b61b1a04, platform=LINUX, deviceUDID=07160795b61b1a04, appActivity=com.abc.mcoe.dash.dev.DashDevActivity, desired={appPackage=com.abc.mcoe.dash.dev, appActivity=com.abc.mcoe.dash.dev.DashDevActivity, platformVersion=6.0.1, browserName=Android, fastReset=true, platformName=Android, deviceName=07160795b61b1a04}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, browserName=Android, javascriptEnabled=true, deviceModel=SM-N920V, fastReset=true, platformName=Android, deviceManufacturer=samsung}]
+Session ID: 3e7839e0-25a6-4b19-bbd4-ee29034a6891
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:33)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Test_Package.Mobile_Login.complete_activity(Mobile_Login.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- complete_activity -->
+      </class> <!-- Test_Package.Mobile_Login -->
+      <class name="Test_Package.Pickup_Activity">
+        <test-method status="PASS" signature="Send_Pickup()[pri:0, instance:Test_Package.Pickup_Activity@5e3a8624]" name="Send_Pickup" duration-ms="12902" started-at="2017-11-06T12:31:28Z" finished-at="2017-11-06T12:31:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Send_Pickup -->
+      </class> <!-- Test_Package.Pickup_Activity -->
+      <class name="Test_Package.Web_APP">
+        <test-method status="PASS" signature="test_init()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="test_init" duration-ms="16953" depends-on-groups="Rest_API" started-at="2017-11-06T12:31:41Z" finished-at="2017-11-06T12:31:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_init -->
+        <test-method status="PASS" signature="login_portal()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="login_portal" duration-ms="38" started-at="2017-11-06T12:31:58Z" depends-on-methods="Test_Package.Web_APP.test_init" finished-at="2017-11-06T12:31:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_portal -->
+        <test-method status="PASS" signature="enter_values_for_login()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="enter_values_for_login" duration-ms="7872" started-at="2017-11-06T12:31:58Z" depends-on-methods="Test_Package.Web_APP.login_portal" finished-at="2017-11-06T12:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enter_values_for_login -->
+        <test-method status="PASS" signature="select_pickup_tab()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="select_pickup_tab" duration-ms="10303" started-at="2017-11-06T12:32:06Z" depends-on-methods="Test_Package.Web_APP.enter_values_for_login" finished-at="2017-11-06T12:32:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_pickup_tab -->
+        <test-method status="PASS" signature="row_column_exercise()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="row_column_exercise" duration-ms="5492" started-at="2017-11-06T12:32:16Z" depends-on-methods="Test_Package.Web_APP.select_pickup_tab" finished-at="2017-11-06T12:32:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- row_column_exercise -->
+        <test-method status="PASS" signature="push_to_app()[pri:0, instance:Test_Package.Web_APP@604ed9f0]" name="push_to_app" duration-ms="6639" started-at="2017-11-06T12:32:22Z" depends-on-methods="Test_Package.Web_APP.row_column_exercise" finished-at="2017-11-06T12:32:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- push_to_app -->
+      </class> <!-- Test_Package.Web_APP -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

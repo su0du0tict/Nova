@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="Test_Package.Mobile_Login">
+        <methods>
+          <include name="complete_activity"/>
+          <include name="login"/>
+          <include name="TnC_Agree"/>
+          <include name="init"/>
+          <include name="Provide_permissions"/>
+          <include name="cancel_popup"/>
+          <include name="complete_activity_selection"/>
+          <include name="Open_Activity_and_Accept"/>
+        </methods>
+      </class> <!-- Test_Package.Mobile_Login -->
+      <class name="Test_Package.Pickup_Activity">
+        <methods>
+          <include name="Send_Pickup"/>
+        </methods>
+      </class> <!-- Test_Package.Pickup_Activity -->
+      <class name="Test_Package.Web_APP">
+        <methods>
+          <include name="test_init"/>
+          <include name="login_portal"/>
+          <include name="row_column_exercise"/>
+          <include name="push_to_app"/>
+          <include name="enter_values_for_login"/>
+          <include name="select_pickup_tab"/>
+        </methods>
+      </class> <!-- Test_Package.Web_APP -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
